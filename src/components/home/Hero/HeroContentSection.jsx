@@ -1,11 +1,12 @@
 import { MainButton } from "@/components/ui/button";
+import { Circle } from "@/components/ui/circle";
 import { SubHeading } from "@/components/ui/subheading";
 import { HeroContent } from "@/constants/home";
 import Image from "next/image";
 
 const HeroContentSection = () => {
   return (
-    <div className="w-full h-1/2 md:w-1/2 md:h-full relative flex flex-col md:gap-y-3 gap-y-4">
+    <div className="order-2 md:order-1 w-full h-1/2 md:w-1/2 md:h-full relative flex flex-col md:gap-y-3 gap-y-4">
       {/* Sub Heading */}
       <SubHeading content={HeroContent.subHead} textColor="white" />
 
