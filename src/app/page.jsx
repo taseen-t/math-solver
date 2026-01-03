@@ -1,6 +1,6 @@
 import Navbar from "@/components/ui/navbar/Navbar"
-import HeroSection from "@/components/home/hero/Hero"
 import NewTool from "@/components/home/new-tool/NewTool"
+import HeroSection from "@/components/home/hero/HeroSection"
 
 const Home = () => {
   return (
