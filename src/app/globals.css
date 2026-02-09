@@ -2,8 +2,8 @@
 
 :root {
   --primary: #003529;
-  --glass: rgba(255,255,255,0.1);
-  --border: #D8D8D8;
+  --glass: rgba(255, 255, 255, 0.1);
+  --border: #d8d8d8;
 }
 
 @theme inline {
@@ -11,4 +11,25 @@
   --color-glass-50: var(--glass);
   --color-border-50: var(--border);
   --font-primary: var(--font-mon);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll 60s linear infinite reverse;
+}
+
+.pause-animation:hover {
+  animation-play-state: paused;
 }
